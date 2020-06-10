@@ -9,8 +9,7 @@ Para instalar, digite no terminal: <br/>
 ```bash
 pip install Flask
 ```
-
---> py-solc
+- py-solc <br/>
 Para instalar, digite no terminal: <br/>
 ```bash
 pip3 install py-solc
@@ -28,8 +27,8 @@ python3 app.py
 ```
 
 ## Como funciona:
-1ª etapa: adicionar os candidatos - criação dos contratos;<br/>
-2ª etapa: dar deploy na eleição;<br/>
-3ª etapa: dar direito de voto a eleitores; <br/>
-4ª etapa: colocar a chave privada e votar na legenda do candidato; <br/>
-5ª etapa: resultado; <br/>
+1ª etapa: dar deploy na eleição;<br/>
+2ª etapa: adicionar os candidatos - criação dos contratos com assinatura de cada candidato;<br/>
+3ª etapa: dar direito de voto a eleitores com assinatura do TSE; <br/>
+4ª etapa: eleitores votam e assinam com ssuas respectivas chaves privadas; <br/>
+5ª etapa: resultado das eleições; <br/>
