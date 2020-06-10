@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block content %}
+<form action="{{ url_for('create') }}" method="POST">
+    <div class="form-group">
+        <label>Nome do candidato</label>
+        <input name="candidate" type="text" class="form-control" id="candidate"
+            placeholder="digite o nome do candidato">
+    </div>
+    <div class="form-group">
+        <label for="ipca">Promessa para IPCA abaixo de X(%): </label>
+        <input type="number" class="form-control" id="ipca" name="ipca" placeholder="digite aqui a promessa">
+    </div>
+    <div class="form-group">
+        <label for="pib">Promessa para PIB per capita acima de: </label>
+        <input type="number" class="form-control" id="pib" name="pib" placeholder="digite aqui a promessa">
+    </div>
+    <div class="form-group">
+        <label for="party">Número do partido: </label>
+        <input type="number" class="form-control" id="party" name="party" placeholder="digite aqui o número do partido">
+    </div>
+    <div class="form-group">
+        <label for="privKey">Chave privada para assinar o contrato: </label>
+        <input type="text" class="form-control" id="privKey" name="privKey"
+            placeholder="digite aqui a sua chave privada para assinar o contrato">
+    </div>
+    <button type="submit" class="btn btn-primary">Criar</button>
+</form>
+<a href="{{ url_for('election') }}"><button>Deploy Election</button></a>
+{% endblock %}
