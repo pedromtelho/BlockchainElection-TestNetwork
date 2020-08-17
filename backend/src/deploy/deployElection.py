@@ -14,7 +14,7 @@ def deployElection():
         "sources": {
             "Election.sol": {
                 "content": '''
-                    pragma solidity >=0.4.22 <0.7.0;
+                    pragma solidity >=0.4.22;
 
                     contract Election {
                     
@@ -117,7 +117,7 @@ def deployElection():
     election = web3.eth.contract(abi=abi, bytecode=bytecode)
 
     acct = web3.eth.account.privateKeyToAccount(
-        '0xd8d4da556d891256b550e6d0e4286b93a17a8a4dc8edcd99a8555d0f4ee43fa0')
+        '0xb8be890d7413167758d34996309e1240d5add5a1b094010f1e52c9b0b2acf562')
 
     tx_hash = election.constructor().buildTransaction({
         'from': acct.address,
@@ -127,7 +127,7 @@ def deployElection():
     })
 
     signed = web3.eth.account.signTransaction(
-        tx_hash, '0xd8d4da556d891256b550e6d0e4286b93a17a8a4dc8edcd99a8555d0f4ee43fa0')
+        tx_hash, '0xb8be890d7413167758d34996309e1240d5add5a1b094010f1e52c9b0b2acf562')
     result = web3.eth.sendRawTransaction(signed.rawTransaction)
 
     tx_receipt = web3.eth.waitForTransactionReceipt(result)

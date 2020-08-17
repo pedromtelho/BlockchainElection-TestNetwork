@@ -17,7 +17,7 @@ listCandidates = []
 @app.route("/")
 def home():
     # function TSE transfer ether to electors
-    # sendEthers.sendEthers(3)
+    # sendEthers.sendEthers()
 
     global address
     global abi

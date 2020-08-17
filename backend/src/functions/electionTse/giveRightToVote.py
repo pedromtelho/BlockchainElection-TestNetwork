@@ -13,7 +13,6 @@ def giveRightToVote(addressElection, abiElection, voters, privKey):
     contract = web3.eth.contract(address=addressElection, abi=abiElection)
     acct = web3.eth.account.privateKeyToAccount(privKey)
     web3.eth.defaultAccount = acct.address
-    counter = 0
     for index in range(voters):
         voter = ganacheWeb3.eth.accounts[index]
         # Give right to vote
@@ -23,7 +22,6 @@ def giveRightToVote(addressElection, abiElection, voters, privKey):
                 'gas': 1728712,
                 'gasPrice': web3.toWei('10', 'gwei')
             })
-        counter += 5
 
         signed_txn = web3.eth.account.signTransaction(
             tx_hash, private_key=privKey)

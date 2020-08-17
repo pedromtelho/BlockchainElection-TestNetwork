@@ -7,7 +7,7 @@ web3 = Web3(Web3.HTTPProvider(provider_url))
 def winningProposal(addressElection, abiElection):
     contract = web3.eth.contract(address=addressElection, abi=abiElection)
     acct = web3.eth.account.privateKeyToAccount(
-        '0xd8d4da556d891256b550e6d0e4286b93a17a8a4dc8edcd99a8555d0f4ee43fa0')
+        '0xb8be890d7413167758d34996309e1240d5add5a1b094010f1e52c9b0b2acf562')
 
     result = contract.functions.winningProposal().call({'from': acct.address})
     return str(result)

@@ -14,7 +14,7 @@ def receiveFormInformations(ipca, pib, name, privKey):
         "sources": {
             "CandidateProposal.sol": {
                 "content": '''
-                    pragma solidity >=0.4.22 <0.7.0;
+                    pragma solidity >=0.4.22;
 
                     contract CandidateProposal {
 

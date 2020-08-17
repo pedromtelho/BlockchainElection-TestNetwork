@@ -9,19 +9,19 @@ def sendEthers():
     providerUrl = Web3(Web3.HTTPProvider(provider_url))
     # ganacheWeb3 = Web3(Web3.HTTPProvider(ganache_url))
 
-    privKeyTse = '0xd8d4da556d891256b550e6d0e4286b93a17a8a4dc8edcd99a8555d0f4ee43fa0'
+    privKeyTse = '0xb8be890d7413167758d34996309e1240d5add5a1b094010f1e52c9b0b2acf562'
 
     valueToTransf = int(providerUrl.eth.getBalance(
-        '0xf2640D5D2c42A3dE756484A39A20A9E0C58D9a84'))*10**(-18)/2
+        '0x248af484425205d07095C99e434Eaa5565DA1780'))*10**(-18)/4
 
     sendEthDict = {}
     nonce = providerUrl.eth.getTransactionCount(
-        '0xf2640D5D2c42A3dE756484A39A20A9E0C58D9a84')
+        '0x248af484425205d07095C99e434Eaa5565DA1780')
     # ESC (Electoral Superior Court) send ethers to all voters
 
     tx = {
         'nonce': nonce,
-        'to': '0xf2640D5D2c42A3dE756484A39A20A9E0C58D9a84',
+        'to': '0x3dfC8E716D08f4C3c7b49b8A5A27a7626f8b397C',
         'value': providerUrl.toWei(valueToTransf, 'ether'),
         'gas': 200000,
         'gasPrice': providerUrl.toWei('50', 'gwei'),
