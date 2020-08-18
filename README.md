@@ -7,24 +7,25 @@ Orientador: Raul Ikeda <br/>
 - Solidity; <br/>
 - Flask <br/>
 Para instalar, digite no terminal: <br/>
-bash
+```bash
 pip install Flask
+```
 
 - py-solc
 Para instalar, digite no terminal: <br/>
-bash
+```bash
 pip3 install py-solc
-
+```
 
 ## Inicializando a aplicação
 No terminal, inicialize o ganache-cli com o número de contas da quantidade de eleitores: <br/>
-bash
+```bash
 ganache-cli -a <número_de_contas>
-
+```
 No terminal:
-bash
+```bash
 python3 app.py
-
+```
 
 ## Como funciona:
 1ª etapa: dar deploy na eleição;
