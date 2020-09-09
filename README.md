@@ -16,6 +16,8 @@ Para instalar, digite no terminal: <br/>
 ```bash
 pip3 install py-solc
 ```
+- Infura
+Para utilizar basta entrar no link <a>https://infura.io/</a> e criar uma conta.
 
 ## Inicializando a aplicação
 No terminal, inicialize o ganache-cli com o número de contas da quantidade de eleitores: <br/>
