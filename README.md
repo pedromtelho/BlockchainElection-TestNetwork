@@ -22,6 +22,19 @@ No terminal, inicialize o ganache-cli com o número de contas da quantidade de e
 ```bash
 ganache-cli -a <número_de_contas>
 ```
+
+Caso queira distribuir faucet ethers para outras contas basta descomentar em app.py a função sendEthers e comentar as demais linhas: <br/>
+```python
+def home():
+    # function TSE transfer ether to electors
+    sendEthers.sendEthers()
+
+    #global address
+    #global abi
+    #address, abi = deployElectionTse.deployElection()
+    #print("election address: "+address)
+    return render_template("index.html")
+```
 No terminal:
 ```bash
 python3 app.py
