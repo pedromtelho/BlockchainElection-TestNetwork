@@ -11,12 +11,12 @@ Para instalar, digite no terminal: <br/>
 pip install Flask
 ```
 
-- py-solc
+- py-solc<br/>
 Para instalar, digite no terminal: <br/>
 ```bash
 pip3 install py-solc
 ```
-- Infura
+- Infura<br/>
 Para utilizar basta entrar no link <a>https://infura.io/</a> e criar uma conta.
 
 ## Inicializando a aplicação
